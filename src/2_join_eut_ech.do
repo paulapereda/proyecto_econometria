@@ -17,11 +17,11 @@ merge 1:1 bc_correlat bc_nper using "/Users/paulapereda/Documents/OneDrive - Uni
 
 save eut_ech_merge, replace
 
-/* Me quedo œnicamente con los que efectivamente se mergearon */
+/* Me quedo Ãºnicamente con los que efectivamente se mergearon */
 
 keep if _merge == 3
 
-/* Me quedo con aquellos cuya relaci—n de parentesco es o jefe o c—nyuge */ 
+/* Me quedo con aquellos cuya relaciÃ³n de parentesco es o jefe o cÃ³nyuge */ 
 
 keep if bc_pe4 == 2 | bc_pe4 == 1
 
@@ -59,7 +59,7 @@ gen share_fem = bc_pt1/ing_n if bc_pe2 == 2
 
 save base_ok, replace
 
-/* ÀHabemus discontinuidad? */
+/* Â¿Habemus discontinuidad? */
 
 hist share_fem if share_fem>0 & share_fem!=.
 
@@ -67,4 +67,4 @@ save base_ok, replace
 gen counter=.
 
 
-/* ÁMil gracias a Horacio Rueda! */
+/* Â¡Mil gracias a Horacio Rueda por la ayuda! */
