@@ -10,8 +10,13 @@ data <- readRDS("data/ech_eut_filtered.rds") %>%
   mutate(treatment = ifelse(share_fem > 0.5, 1, 0)) %>%
   mutate(share_fem = round(share_fem, 2)) %>% 
   filter(sexo == 2) %>% 
+  filter(share_fem > 0) %>% 
+  filter(bc_pe3 < 66 | bc_pe3 > 17) %>% 
   group_by(share_fem) %>% 
-  mutate(outcome = peso_eut/sum(peso_eut)) # is this really ok?
+  mutate(outcome = n()*peso_eut) 
+
+# como outcome tengo que construir el share of couples que están en cada share_fem
+# focus!!!!!!!
 
 #saveRDS(data, 'data/data.rds')
 
