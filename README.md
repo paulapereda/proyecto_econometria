@@ -1,7 +1,7 @@
 # Proyecto Final Econometría II 
 ## Maestría en Economía - Universidad de Montevideo (Prof. Ana Inés Balsa)
 
-### Normas de género, ingreso relativo en el hogar y producción del hogar.
+### Normas de género, ingreso relativo y producción del hogar.
 
 Basado en el paper:
 
