@@ -1,30 +1,46 @@
 library(tidyverse)
-library(lpdensity)
-library(rddensity)
-library(rdlocrand)
 library(rdrobust)
 
-data <- readRDS("data/data.rds")
+source(here::here("src", "3_tidy.R"))
 
-# Primer intento: usando ponderadores
+# Primer intento: total de ingresos (yt)
 
-Y <- data$outcome
-X <- data$share_fem
-T <- data$treatment
+Y <- data_yt$outcome
+X <- data_yt$share_fem
+T <- data_yt$treatment
 T_X <- T*X
 
-out <- rdplot(Y, X, nbins = c(10,10), 
+out_yt <- rdplot(Y, X, nbins = c(10,10), 
               c = 0.5, binselect = 'esmv')
-summary(out)
+summary(out_yt)
 
-## 20 Quantile-spaced bins
+## 20 Quantile-spaced bins (bins del paper)
 
-out <- rdplot(Y, X, nbins = c(10,10), c = 0.4,
+out_yt <- rdplot(Y, X, nbins = c(10,10), c = 0.500000001,
              binselect = 'qs', cex.axis = 1.5, 
-             cex.lab =1.5, x.label = 'Share earned by the wife',
-             y.label = 'Fraction of couples', 
+             cex.lab = 1.5, x.label = 'Share earned by the wife',
+             y.label = 'Number of couples', 
              title = 'Distribution of Relative Income (ECH data)') 
 
-summary(out)
+summary(out_yt)
 
-##
+# Segundo intento: ingresos laborales (yl)
+
+Y <- data_yl$outcome2
+X <- data_yl$share_fem2
+T <- data_yl$treatment
+T_X <- T*X
+
+out_yl <- rdplot(Y, X, nbins = c(10,10), 
+              c = 0.5, binselect = 'esmv')
+summary(out_yl)
+
+## 20 Quantile-spaced bins (bins del paper)
+
+out_yl <- rdplot(Y, X, nbins = c(10,10), c = 0.500000001,
+              binselect = 'qs', cex.axis = 1.5, 
+              cex.lab = 1.5, x.label = 'Share earned by the wife',
+              y.label = 'Number of couples', 
+              title = 'Distribution of Relative Income (ECH data)') 
+
+summary(out_yl)
