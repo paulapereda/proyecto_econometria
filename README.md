@@ -15,7 +15,8 @@ Basado en el paper:
 Bibliografía y materiales:
 
 - [Bertrand, M., Kamenica, E., & Pan, J. (2015). Gender identity and relative income within households. The Quarterly Journal of Economics, 130(2), 571-614.](https://academic.oup.com/qje/article/130/2/571/2330321)
+- [Bucheli, M. y Lara, C. (2018). Revealing gender gap changes in home production and labor income in Uruguay. Serie Documentos de Trabajo, DT 12/2018. Instituto de Economía, Facultad de Ciencias Económicas y Administración, Universidad de la República,
+Uruguay.](http://www.iecon.ccee.edu.uy/download.php?len=es&id=641&nbre=dt-12-18.pdf&ti=application/pdf&tc=Publicaciones)
 - [Cattaneo, Matias D., Nicolás Idrobo, and Rocío Titiunik (2018). A Practical Introduction to Regression Discontinuity Designs: Volume I.](https://cattaneo.princeton.edu/books/Cattaneo-Idrobo-Titiunik_2018_CUP-Vol1.pdf)
 - [Hederos Eriksson, K., & Stenberg, A. (2015). Gender identity and relative income within households: Evidence from Sweden.](http://ftp.iza.org/dp9533.pdf)
 - [Instituto de Economía, Universidad de la República (2019). Encuesta Continua de Hogares Compatibilizada 1981-2017. Versión marzo 2019.](http://www.iecon.ccee.edu.uy/)
-
