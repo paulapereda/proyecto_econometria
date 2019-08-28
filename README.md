@@ -1,4 +1,4 @@
-# Proyecto Final Econometría II 
+# Primera idea para el Proyecto Final Econometría II 
 ## Maestría en Economía - Universidad de Montevideo (Prof. Ana Inés Balsa)
 
 ### Normas de género, ingreso relativo y producción del hogar.
